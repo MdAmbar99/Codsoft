@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calci.css">
+    <script src="calci.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="txt">
+            <h1>Calculator!!!</h1>
+            <h2>@CodSoft</h2>
+        </div>
+
+        
+        <div id="body">
+            <textarea id="bar"></textarea>
+            <div id="num_body">
+                <button class="num" onclick="appendToBar('7')">7</button>
+                <button class="num" onclick="appendToBar('8')">8</button>
+                <button class="num" onclick="appendToBar('9')">9</button>
+                <button class="num" onclick="appendToBar('4')">4</button>
+                <button class="num" onclick="appendToBar('5')">5</button>
+                <button class="num" onclick="appendToBar('6')">6</button>
+                <button class="num" onclick="appendToBar('1')">1</button>
+                <button class="num" onclick="appendToBar('2')">2</button>
+                <button class="num" onclick="appendToBar('3')">3</button>
+                <button class="num" onclick="clearBar()">c</button>
+                <button class="num" onclick="appendToBar('0')">0</button>
+                <button class="num" onclick="appendToBar('.')">.</button>
+            </div>
+            <div id="operators">
+                <div class="opr">
+                    <button id="op1" class="op" onclick="appendToBar('+')">+</button>
+                    <button id="op2" class="op" onclick="appendToBar('-')">-</button>
+                    <button id="op3" class="op" onclick="appendToBar('/')">/</button>
+                    <button id="op4" class="op" onclick="appendToBar('*')">*</button>
+                    <button id="op6" class="op" onclick="calculateExponent()">^2</button>
+                    <button id="op7" class="op" onclick="calculateSquareRoot()">√</button>
+                </div>
+                <div class="eq">
+                    <button id="op5" class="op" onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<footer style="margin: 0px;padding: 0%; color: antiquewhite;">© all copyrights belong to Ayush</footer>
+</html>
